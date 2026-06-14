@@ -354,7 +354,7 @@ h1 {
   background: linear-gradient(135deg, var(--white), var(--mint));
 }
 
-.ses-visual {
+.engineering-service-visual {
   display: grid;
   min-height: 340px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -364,7 +364,7 @@ h1 {
   border-left: 1px solid var(--line);
 }
 
-.ses-visual span {
+.engineering-service-visual span {
   display: grid;
   min-height: 92px;
   place-items: center;
@@ -608,7 +608,7 @@ h1 {
   }
 
   .service-card > img,
-  .ses-visual {
+  .engineering-service-visual {
     border-top: 1px solid var(--line);
     border-left: 0;
   }

@@ -24,8 +24,8 @@ const services = [
     imageAlt: 'Flow Report のランディングページ',
   },
   {
-    name: 'SES',
-    label: 'システムエンジニアリングサービス',
+    name: 'システムエンジニアリングサービス',
+    label: '開発現場への技術支援',
     description:
       'Web システム開発・業務アプリケーション開発を中心に、現場に必要な技術支援と開発推進を行います。',
     href: '#contact',
@@ -37,7 +37,7 @@ const services = [
 const businesses = [
   'フリーランスエンジニアマッチングプラットフォーム「Flow Link」の運営',
   'フリーランスエンジニア向け作業報告書作成 Web アプリ「Flow Report」の運営',
-  'SES（システムエンジニアリングサービス）事業の運営',
+  'システムエンジニアリングサービス事業の運営',
 ];
 ---
 
@@ -51,7 +51,7 @@ const businesses = [
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
-      content="株式会社FlowTechは、Flow Link、Flow Report、SES事業を通じて、フリーランスエンジニアと企業の仕事の流れを支える会社です。"
+      content="株式会社FlowTechは、Flow Link、Flow Report、システムエンジニアリングサービス事業を通じて、フリーランスエンジニアと企業の仕事の流れを支える会社です。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="株式会社FlowTech" />
@@ -93,7 +93,7 @@ const businesses = [
           <img src="/assets/flow-report.png" alt="" loading="eager" decoding="async" />
         </div>
         <div class="hero-content">
-          <p class="eyebrow">Freelance Engineering, Product, and SES</p>
+          <p class="eyebrow">Freelance Engineering / Product / システムエンジニアリングサービス</p>
           <h1 id="hero-title">株式会社FlowTech</h1>
           <p class="hero-copy">
             フリーランスエンジニアと企業のあいだに、仕事が自然に流れる仕組みをつくる。
@@ -134,7 +134,7 @@ const businesses = [
               {service.image ? (
                 <img src={service.image} alt={service.imageAlt} loading="lazy" decoding="async" />
               ) : (
-                <div class="ses-visual" aria-hidden="true">
+                <div class="engineering-service-visual" aria-hidden="true">
                   <span>PM</span>
                   <span>Backend</span>
                   <span>Frontend</span>
@@ -219,7 +219,7 @@ const businesses = [
         <p class="section-kicker">Contact</p>
         <h2 id="contact-title">事業・採用に関するご相談</h2>
         <p>
-          Flow Link の利用、SES 事業、フリーランスエンジニアとしての参画について、
+          Flow Link の利用、システムエンジニアリングサービス事業、フリーランスエンジニアとしての参画について、
           まずは各サービスからお問い合わせください。
         </p>
         <div class="contact-actions">
