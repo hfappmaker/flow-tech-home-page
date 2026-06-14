@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#121826"/>
-  <path fill="#c8ff45" d="M14 16h38v10H26v9h21v10H26v15H14z"/>
-  <path fill="#18b7ad" d="M38 32h14v10H38z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="flowtech-favicon-signal" x1="25" y1="22" x2="105" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#17B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#121826"/>
+  <path fill="#FBFBF7" d="M24 22h75l15 15-15 15H51v16h40l13 13-13 13H24V22Z"/>
+  <path fill="#121826" d="M51 42h48l5-5-5-5H51v10Z"/>
+  <path fill="#121826" d="M51 68h40l5 5-5 5H51V68Z"/>
+  <path fill="url(#flowtech-favicon-signal)" d="M67 47h33l14-14H81L67 47Z"/>
+  <path fill="url(#flowtech-favicon-signal)" d="M66 72h24l11 11-11 11H66l11-11-11-11Z"/>
 </svg>

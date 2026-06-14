@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 96" role="img" aria-labelledby="flowtech-logo-title">
+  <title id="flowtech-logo-title">FlowTech</title>
+  <defs>
+    <linearGradient id="flowtech-signal" x1="28" y1="18" x2="112" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#17B8A6"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(2 10)">
+    <path
+      fill="#121826"
+      d="M5 4h82c4.4 0 8.7 1.8 11.8 4.9L114 24.1 98.8 39.3A16.7 16.7 0 0 1 87 44.2H38v13.6h41.2c4.4 0 8.7 1.8 11.8 4.9l12.8 12.8-12.8 12.8A16.7 16.7 0 0 1 79.2 93H5V4Z"
+    />
+    <path fill="#FBFBF7" d="M31.5 27.5h55.9L98.2 16.7H31.5v10.8Z"/>
+    <path fill="#FBFBF7" d="M31.5 57.8h47.4l9.8 9.7-9.8 9.8H31.5V57.8Z"/>
+    <path fill="url(#flowtech-signal)" d="M53.2 32.2h42.7L113.8 14.3h-43L53.2 32.2Z"/>
+    <path fill="url(#flowtech-signal)" d="M52.8 62.2h28.9l12.7 12.7-12.7 12.7H52.8l12.7-12.7-12.7-12.7Z"/>
+  </g>
+  <g fill="#121826">
+    <text
+      x="141"
+      y="61"
+      font-family="'Bricolage Grotesque', 'Avenir Next', 'Segoe UI', sans-serif"
+      font-size="48"
+      font-weight="800"
+      letter-spacing="0"
+    >FlowTech</text>
+  </g>
+</svg>

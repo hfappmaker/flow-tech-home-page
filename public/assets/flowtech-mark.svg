@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="flowtech-mark-title">
+  <title id="flowtech-mark-title">FlowTech mark</title>
+  <defs>
+    <linearGradient id="flowtech-mark-signal" x1="25" y1="22" x2="105" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F7AFF"/>
+      <stop offset="1" stop-color="#17B8A6"/>
+    </linearGradient>
+  </defs>
+  <path
+    fill="#121826"
+    d="M10 10h82.5c4.5 0 8.8 1.8 12 5l15.5 15.5L104.5 46a17 17 0 0 1-12 5H43v16h41.5c4.5 0 8.8 1.8 12 5L110 85.5 96.5 99a17 17 0 0 1-12 5H10V10Z"
+  />
+  <path fill="#FBFBF7" d="M37 34h56l11-11H37v11Z"/>
+  <path fill="#FBFBF7" d="M37 67h47.5L95 77.5 84.5 88H37V67Z"/>
+  <path fill="url(#flowtech-mark-signal)" d="M59 39h42l18-18H77L59 39Z"/>
+  <path fill="url(#flowtech-mark-signal)" d="M58 72h29l13 13-13 13H58l13-13-13-13Z"/>
+</svg>
