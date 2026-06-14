@@ -1,17 +1,231 @@
 ---
+import { getNews } from '../lib/news';
+import '../styles/global.css';
 
+const news = await getNews(4);
+
+const services = [
+  {
+    name: 'Flow Link',
+    label: 'フリーランスエンジニアマッチングプラットフォーム',
+    description:
+      'フリーランスエンジニアと企業をつなぎ、案件検索から応募、企業との接点づくりまでをスムーズにするプラットフォームです。',
+    href: 'https://flowlink.flowtech.co.jp',
+    image: '/assets/flow-link.png',
+    imageAlt: 'Flow Link のサービス画面',
+  },
+  {
+    name: 'Flow Report',
+    label: '作業報告書作成 Web アプリ',
+    description:
+      'フリーランスエンジニアの日々の作業報告書・請求書作成を軽くし、月末業務を整える Web アプリです。',
+    href: 'https://about.flowreport.flowtech.co.jp',
+    image: '/assets/flow-report.png',
+    imageAlt: 'Flow Report のランディングページ',
+  },
+  {
+    name: 'SES',
+    label: 'システムエンジニアリングサービス',
+    description:
+      'Web システム開発・業務アプリケーション開発を中心に、現場に必要な技術支援と開発推進を行います。',
+    href: '#contact',
+    image: '',
+    imageAlt: '',
+  },
+];
+
+const businesses = [
+  'フリーランスエンジニアマッチングプラットフォーム「Flow Link」の運営',
+  'フリーランスエンジニア向け作業報告書作成 Web アプリ「Flow Report」の運営',
+  'SES（システムエンジニアリングサービス）事業の運営',
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="株式会社FlowTechは、Flow Link、Flow Report、SES事業を通じて、フリーランスエンジニアと企業の仕事の流れを支える会社です。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="株式会社FlowTech" />
+    <meta property="og:title" content="株式会社FlowTech" />
+    <meta
+      property="og:description"
+      content="フリーランスエンジニアと企業の仕事の流れを支える、株式会社FlowTechの公式ホームページです。"
+    />
+    <meta property="og:url" content="https://flowtech.co.jp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://flowtech.co.jp" />
+    <title>株式会社FlowTech | フリーランスエンジニアと企業をつなぐ</title>
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#top" aria-label="株式会社FlowTech ホーム">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>FlowTech</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#services">事業</a>
+        <a href="#news">お知らせ</a>
+        <a href="#recruit">採用</a>
+        <a href="#company">会社情報</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-screens" aria-hidden="true">
+          <img src="/assets/flow-link.png" alt="" loading="eager" decoding="async" />
+          <img src="/assets/flow-report.png" alt="" loading="eager" decoding="async" />
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Freelance Engineering, Product, and SES</p>
+          <h1 id="hero-title">株式会社FlowTech</h1>
+          <p class="hero-copy">
+            フリーランスエンジニアと企業のあいだに、仕事が自然に流れる仕組みをつくる。
+            FlowTech は、マッチング、業務支援、開発現場への技術提供を通じて、
+            エンジニアが前に進みやすい事業を運営しています。
+          </p>
+          <div class="hero-actions" aria-label="主要リンク">
+            <a class="button primary" href="https://flowlink.flowtech.co.jp">Flow Link を見る</a>
+            <a class="button secondary" href="#services">事業を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="FlowTech の姿勢">
+        <p>
+          技術者の働き方、企業の開発体制、日々の業務運用。
+          それぞれの詰まりをほどき、実務に届くプロダクトと支援を積み上げます。
+        </p>
+      </section>
+
+      <section id="services" class="section services-section" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="section-kicker">Business</p>
+          <h2 id="services-title">事業内容</h2>
+        </div>
+        <div class="service-list">
+          {services.map((service) => (
+            <article class:list={['service-card', !service.image && 'service-card--plain']}>
+              <div class="service-copy">
+                <p class="service-label">{service.label}</p>
+                <h3>{service.name}</h3>
+                <p>{service.description}</p>
+                <a href={service.href} class="text-link">
+                  詳しく見る
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              {service.image ? (
+                <img src={service.image} alt={service.imageAlt} loading="lazy" decoding="async" />
+              ) : (
+                <div class="ses-visual" aria-hidden="true">
+                  <span>PM</span>
+                  <span>Backend</span>
+                  <span>Frontend</span>
+                  <span>Cloud</span>
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="news" class="section news-section" aria-labelledby="news-title">
+        <div class="section-heading">
+          <p class="section-kicker">News</p>
+          <h2 id="news-title">お知らせ</h2>
+        </div>
+        <div class="news-list">
+          {news.items.length > 0 ? (
+            news.items.map((item) => (
+              <article class="news-item">
+                <time datetime={item.publishedAt}>{item.displayDate}</time>
+                {item.category && <span class="news-category">{item.category}</span>}
+                <h3>{item.title}</h3>
+                {item.excerpt && <p>{item.excerpt}</p>}
+              </article>
+            ))
+          ) : (
+            <div class="empty-news">
+              <p>現在掲載中のお知らせはありません。</p>
+              {!news.configured && (
+                <small>
+                  microCMS の環境変数を設定すると、この欄に最新のお知らせが表示されます。
+                </small>
+              )}
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section id="recruit" class="recruit-section" aria-labelledby="recruit-title">
+        <div>
+          <p class="section-kicker">Recruit</p>
+          <h2 id="recruit-title">フリーランスエンジニア募集中</h2>
+        </div>
+        <p>
+          FlowTech では、Web 開発・業務システム開発・クラウド活用など、
+          技術で事業を前に進めるフリーランスエンジニアとの接点を広げています。
+        </p>
+        <a class="button primary" href="https://flowlink.flowtech.co.jp">案件を探す</a>
+      </section>
+
+      <section id="company" class="section company-section" aria-labelledby="company-title">
+        <div class="section-heading">
+          <p class="section-kicker">Company</p>
+          <h2 id="company-title">会社情報</h2>
+        </div>
+        <dl class="company-table">
+          <div>
+            <dt>会社名</dt>
+            <dd>株式会社FlowTech</dd>
+          </div>
+          <div>
+            <dt>所在地</dt>
+            <dd>東京都渋谷区渋谷2-19-15 宮益坂ビルディング609</dd>
+          </div>
+          <div>
+            <dt>代表取締役</dt>
+            <dd>古垣 博光（ふるがき ひろみつ）</dd>
+          </div>
+          <div>
+            <dt>事業内容</dt>
+            <dd>
+              <ul>
+                {businesses.map((business) => <li>{business}</li>)}
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <p class="section-kicker">Contact</p>
+        <h2 id="contact-title">事業・採用に関するご相談</h2>
+        <p>
+          Flow Link の利用、SES 事業、フリーランスエンジニアとしての参画について、
+          まずは各サービスからお問い合わせください。
+        </p>
+        <div class="contact-actions">
+          <a class="button primary" href="https://flowlink.flowtech.co.jp">Flow Link</a>
+          <a class="button secondary" href="https://flowreport.flowtech.co.jp">Flow Report</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 株式会社FlowTech</p>
+      <a href="#top">ページ上部へ</a>
+    </footer>
+  </body>
 </html>

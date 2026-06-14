@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+# 株式会社FlowTech ホームページ
+
+Astro で実装した `https://flowtech.co.jp` 向けの会社ホームページです。
+
+## 開発
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## microCMS
 
-## 🚀 Project Structure
+お知らせ欄は microCMS のリスト API から取得します。`.env.example` を参考に `.env` または Vercel の環境変数へ設定してください。
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+MICROCMS_SERVICE_DOMAIN=your-service-domain
+MICROCMS_API_KEY=your-api-key
+MICROCMS_NEWS_ENDPOINT=news
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+想定フィールドは `title`, `publishedAt`, `category`, `excerpt`, `body` です。未設定でもビルドは通り、「現在掲載中のお知らせはありません。」を表示します。
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Vercel
 
-Any static assets, like images, can be placed in the `public/` directory.
+ビルドコマンドは `npm run build`、出力先は `dist` です。
 
-## 🧞 Commands
+Vercel CLI を使う場合:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+npm i -g vercel
+vercel link
+vercel env pull
+vercel --prod
+```
