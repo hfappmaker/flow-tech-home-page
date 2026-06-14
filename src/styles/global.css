@@ -196,7 +196,7 @@ h3 {
 h1 {
   margin-bottom: 24px;
   font-family: 'Bricolage Grotesque', 'Zen Kaku Gothic New', sans-serif;
-  font-size: 9rem;
+  font-size: 6.2rem;
   font-weight: 800;
   overflow-wrap: anywhere;
 }
@@ -274,7 +274,6 @@ h1 {
 }
 
 .section-heading h2,
-.recruit-section h2,
 .contact-section h2 {
   margin-bottom: 0;
   font-size: 4.8rem;
@@ -436,23 +435,6 @@ h1 {
   margin: 0;
 }
 
-.recruit-section {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr) auto;
-  gap: 28px;
-  align-items: center;
-  padding: clamp(54px, 8vw, 96px) clamp(20px, 7vw, 96px);
-  background: var(--lime);
-  border-bottom: 1px solid rgba(18, 24, 38, 0.18);
-}
-
-.recruit-section p {
-  margin: 0;
-  color: rgba(18, 24, 38, 0.76);
-  font-weight: 700;
-  line-height: 1.9;
-}
-
 .company-section {
   background: var(--paper);
 }
@@ -514,6 +496,72 @@ h1 {
   border-color: rgba(255, 255, 255, 0.46);
 }
 
+.contact-page {
+  min-height: 100vh;
+  padding: clamp(120px, 14vw, 172px) clamp(20px, 7vw, 96px) clamp(64px, 9vw, 112px);
+  background:
+    linear-gradient(115deg, rgba(251, 251, 247, 0.98), rgba(230, 248, 242, 0.72)),
+    var(--paper);
+}
+
+.contact-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: end;
+  margin-bottom: clamp(36px, 7vw, 72px);
+}
+
+.contact-hero h1 {
+  margin-bottom: 0;
+  font-size: clamp(3.2rem, 7vw, 5.2rem);
+}
+
+.contact-hero p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.contact-email-section {
+  padding-block: clamp(32px, 5vw, 56px);
+  border-block: 1px solid var(--line);
+}
+
+.contact-email-section h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 900;
+}
+
+.contact-email-link {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  padding-block: 8px;
+  color: var(--ink);
+  border-bottom: 3px solid var(--blue);
+  font-family: 'Bricolage Grotesque', 'Zen Kaku Gothic New', sans-serif;
+  font-size: clamp(1.45rem, 4vw, 3rem);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contact-email-link:hover,
+.contact-email-link:focus-visible {
+  color: var(--blue);
+}
+
+.contact-email-section p {
+  width: min(760px, 100%);
+  margin: 24px 0 0;
+  color: var(--ink-soft);
+  font-weight: 700;
+  line-height: 1.9;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -531,11 +579,10 @@ h1 {
 
 @media (max-width: 1100px) {
   h1 {
-    font-size: 7.2rem;
+    font-size: 5.2rem;
   }
 
   .section-heading h2,
-  .recruit-section h2,
   .contact-section h2 {
     font-size: 4rem;
   }
@@ -566,11 +613,10 @@ h1 {
   }
 
   h1 {
-    font-size: 5.6rem;
+    font-size: 4.2rem;
   }
 
   .section-heading h2,
-  .recruit-section h2,
   .contact-section h2 {
     font-size: 3.4rem;
   }
@@ -595,14 +641,14 @@ h1 {
   }
 
   .section-heading,
-  .recruit-section,
+  .contact-hero,
   .site-footer {
     align-items: start;
   }
 
   .service-card,
   .service-card--plain,
-  .recruit-section,
+  .contact-hero,
   .company-table div {
     grid-template-columns: 1fr;
   }
@@ -635,7 +681,7 @@ h1 {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.1rem;
   }
 
   .hero-copy,
@@ -644,7 +690,6 @@ h1 {
   }
 
   .section-heading h2,
-  .recruit-section h2,
   .contact-section h2 {
     font-size: 2.55rem;
   }
