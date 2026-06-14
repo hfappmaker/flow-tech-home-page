@@ -361,16 +361,21 @@ h1 {
   border-left: 1px solid var(--line);
 }
 
-.engineering-service-visual span {
+.tech-logo-card {
   display: grid;
-  min-height: 92px;
+  min-height: 104px;
   place-items: center;
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.76);
+  margin: 0;
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(18, 24, 38, 0.12);
   border-radius: 8px;
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: 800;
+  box-shadow: 0 18px 42px rgba(16, 35, 53, 0.08);
+}
+
+.tech-logo-card img {
+  width: min(66%, 150px);
+  height: 72px;
+  object-fit: contain;
 }
 
 .news-section {

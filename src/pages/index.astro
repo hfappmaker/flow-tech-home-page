@@ -132,11 +132,19 @@ const businesses = [
               {service.image ? (
                 <img src={service.image} alt={service.imageAlt} loading="lazy" decoding="async" />
               ) : (
-                <div class="engineering-service-visual" aria-hidden="true">
-                  <span>PM</span>
-                  <span>Backend</span>
-                  <span>Frontend</span>
-                  <span>Cloud</span>
+                <div class="engineering-service-visual" aria-label="対応技術: AWS、Microsoft Azure、C#、TypeScript">
+                  <figure class="tech-logo-card">
+                    <img src="/assets/tech/aws.svg" alt="AWS" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure class="tech-logo-card">
+                    <img src="/assets/tech/azure.svg" alt="Microsoft Azure" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure class="tech-logo-card">
+                    <img src="/assets/tech/csharp.svg" alt="C#" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure class="tech-logo-card">
+                    <img src="/assets/tech/typescript.svg" alt="TypeScript" loading="lazy" decoding="async" />
+                  </figure>
                 </div>
               )}
             </article>
