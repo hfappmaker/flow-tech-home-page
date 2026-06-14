@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="flowtech-favicon-signal" x1="25" y1="22" x2="105" y2="92" gradientUnits="userSpaceOnUse">
+    <linearGradient id="favicon-stream-a" x1="16" y1="28" x2="118" y2="100" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#1F7AFF"/>
-      <stop offset="1" stop-color="#17B8A6"/>
+      <stop offset=".52" stop-color="#28C6D7"/>
+      <stop offset="1" stop-color="#19B58F"/>
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="24" fill="#121826"/>
-  <path fill="#FBFBF7" d="M24 22h75l15 15-15 15H51v16h40l13 13-13 13H24V22Z"/>
-  <path fill="#121826" d="M51 42h48l5-5-5-5H51v10Z"/>
-  <path fill="#121826" d="M51 68h40l5 5-5 5H51V68Z"/>
-  <path fill="url(#flowtech-favicon-signal)" d="M67 47h33l14-14H81L67 47Z"/>
-  <path fill="url(#flowtech-favicon-signal)" d="M66 72h24l11 11-11 11H66l11-11-11-11Z"/>
+  <rect width="128" height="128" rx="28" fill="#121826"/>
+  <g>
+    <path d="M16 39C35 24 55 25 74 37C89 46 101 45 117 31L121 44C101 62 82 61 65 50C49 40 34 41 20 54Z" fill="url(#favicon-stream-a)"/>
+    <path d="M16 64C36 49 56 51 75 63C90 72 103 72 119 59L122 74C101 91 82 90 65 78C49 68 34 69 20 82Z" fill="#FBFBF7"/>
+    <path d="M16 89C35 75 55 76 73 88C88 98 101 99 117 85L121 99C101 116 82 115 64 103C49 94 34 95 20 108Z" fill="url(#favicon-stream-a)"/>
+  </g>
 </svg>
