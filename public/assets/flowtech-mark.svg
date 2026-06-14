@@ -1,20 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="flowtech-mark-title">
   <title id="flowtech-mark-title">FlowTech mark</title>
   <defs>
-    <linearGradient id="mark-stream-a" x1="7" y1="22" x2="120" y2="101" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1F7AFF"/>
-      <stop offset=".54" stop-color="#28C6D7"/>
-      <stop offset="1" stop-color="#19B58F"/>
-    </linearGradient>
-    <linearGradient id="mark-stream-b" x1="13" y1="42" x2="116" y2="86" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#121826"/>
-      <stop offset=".7" stop-color="#121826"/>
-      <stop offset="1" stop-color="#1F7AFF"/>
-    </linearGradient>
+    <clipPath id="mark-simple-clip">
+      <rect x="12" y="12" width="104" height="104" rx="28"/>
+    </clipPath>
   </defs>
-  <g>
-    <path d="M7 37C29 19 52 21 74 34C90 44 105 43 124 25L128 39C105 61 84 60 65 48C48 38 31 38 12 54Z" fill="url(#mark-stream-a)"/>
-    <path d="M7 64C30 46 53 49 75 63C92 73 106 73 126 58L128 74C104 93 83 92 64 79C47 68 31 69 12 82Z" fill="url(#mark-stream-b)"/>
-    <path d="M7 91C30 75 53 77 73 90C89 101 104 102 124 86L128 100C105 120 84 119 64 106C47 95 31 97 12 109Z" fill="url(#mark-stream-a)" opacity=".94"/>
+  <rect x="12" y="12" width="104" height="104" rx="28" fill="#0A1120"/>
+  <g clip-path="url(#mark-simple-clip)">
+    <path d="M39 37h54a11 11 0 0 1 0 22H61v58H39Z" fill="#FBFBF7"/>
+    <path d="M61 70h43a11 11 0 0 1 0 22H61a11 11 0 0 1 0-22Z" fill="#1FD3EE"/>
+    <path d="M93 88a11 11 0 0 1 22 0v23a11 11 0 0 1-22 0Z" fill="#145CFF"/>
   </g>
 </svg>

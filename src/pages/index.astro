@@ -28,7 +28,7 @@ const services = [
     label: '開発現場への技術支援',
     description:
       'Web システム開発・業務アプリケーション開発を中心に、現場に必要な技術支援と開発推進を行います。',
-    href: '#contact',
+    href: '/contact',
     image: '',
     imageAlt: '',
   },
@@ -80,8 +80,8 @@ const businesses = [
       <nav class="nav" aria-label="主要ナビゲーション">
         <a href="#services">事業</a>
         <a href="#news">お知らせ</a>
-        <a href="#recruit">採用</a>
         <a href="#company">会社情報</a>
+        <a href="/contact">お問い合わせ</a>
       </nav>
     </header>
 
@@ -93,11 +93,11 @@ const businesses = [
           <img src="/assets/flow-report.png" alt="" loading="eager" decoding="async" />
         </div>
         <div class="hero-content">
-          <p class="eyebrow">Freelance Engineering / Product / システムエンジニアリングサービス</p>
-          <h1 id="hero-title">株式会社FlowTech</h1>
+          <p class="eyebrow">Freelance Engineering / Product / System Engineering Services</p>
+          <h1 id="hero-title">仕事の流れを、<br />もっとなめらかに。</h1>
           <p class="hero-copy">
-            フリーランスエンジニアと企業のあいだに、仕事が自然に流れる仕組みをつくる。
-            FlowTech は、マッチング、業務支援、開発現場への技術提供を通じて、
+            FlowTech は、フリーランスエンジニアと企業のあいだにある摩擦をほどき、
+            マッチング、業務支援、開発現場への技術提供を通じて、
             エンジニアが前に進みやすい事業を運営しています。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
@@ -174,18 +174,6 @@ const businesses = [
         </div>
       </section>
 
-      <section id="recruit" class="recruit-section" aria-labelledby="recruit-title">
-        <div>
-          <p class="section-kicker">Recruit</p>
-          <h2 id="recruit-title">フリーランスエンジニア募集中</h2>
-        </div>
-        <p>
-          FlowTech では、Web 開発・業務システム開発・クラウド活用など、
-          技術で事業を前に進めるフリーランスエンジニアとの接点を広げています。
-        </p>
-        <a class="button primary" href="https://flowlink.flowtech.co.jp">案件を探す</a>
-      </section>
-
       <section id="company" class="section company-section" aria-labelledby="company-title">
         <div class="section-heading">
           <p class="section-kicker">Company</p>
@@ -215,16 +203,15 @@ const businesses = [
         </dl>
       </section>
 
-      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <section class="contact-section" aria-labelledby="contact-title">
         <p class="section-kicker">Contact</p>
-        <h2 id="contact-title">事業・採用に関するご相談</h2>
+        <h2 id="contact-title">相談したいことを、聞かせてください。</h2>
         <p>
-          Flow Link の利用、システムエンジニアリングサービス事業、フリーランスエンジニアとしての参画について、
-          まずは各サービスからお問い合わせください。
+          Flow Link、Flow Report、System Engineering Servicesについてのご相談を受け付けています。
+          お問い合わせページに記載のメールアドレス宛にご連絡ください。
         </p>
         <div class="contact-actions">
-          <a class="button primary" href="https://flowlink.flowtech.co.jp">Flow Link</a>
-          <a class="button secondary" href="https://flowreport.flowtech.co.jp">Flow Report</a>
+          <a class="button primary" href="/contact">お問い合わせする</a>
         </div>
       </section>
     </main>
