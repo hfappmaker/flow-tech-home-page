@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2320" height="760" viewBox="0 0 2320 760">
+  <defs>
+    <linearGradient id="stream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#145CFF"/>
+      <stop offset="0.48" stop-color="#1FD3EE"/>
+      <stop offset="1" stop-color="#25D6A2"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0F2745"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#07111F" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .jp { font-family: "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif; }
+      .latin { font-family: "Avenir Next", "Inter", "Segoe UI", sans-serif; }
+      .small { font-size: 28px; letter-spacing: 0; }
+      .micro { font-size: 22px; letter-spacing: 0; }
+    </style>
+  </defs>
+
+  <rect width="2320" height="760" fill="#F4F8FB"/>
+
+  <!-- Front side: 91mm x 55mm ratio at 1080 x 650 -->
+  <g transform="translate(70 55)" filter="url(#softShadow)">
+    <rect width="1080" height="650" rx="28" fill="#FBFEFF"/>
+    <path d="M0 0h1080v650H0z" rx="28" fill="#FBFEFF"/>
+    <path d="M648 -90C824 -10 882 120 1106 83v206c-175 26-288-36-410-116C607 114 520 79 405 102V-42c85-22 164-13 243-48Z" fill="url(#stream)" opacity="0.95"/>
+    <path d="M752 12c119 54 179 136 354 107v86c-153 30-244-30-344-89-74-43-141-68-221-50V9c76-14 143-12 211 3Z" fill="#FFFFFF" opacity="0.36"/>
+    <path d="M864 353c-177-80-239-202-470-161v-80c170-33 282 23 403 102 90 58 175 91 286 68v69c-78 21-147 24-219 2Z" fill="url(#stream)" opacity="0.16"/>
+
+    <g transform="translate(72 74)">
+      <g transform="scale(1.52)">
+        <rect x="0" y="0" width="72" height="72" rx="18" fill="#0A1120"/>
+        <clipPath id="frontClip"><rect x="0" y="0" width="72" height="72" rx="18"/></clipPath>
+        <g clip-path="url(#frontClip)">
+          <path d="M20 18h36a8 8 0 0 1 0 16H36v37H20Z" fill="#FBFBF7"/>
+          <path d="M36 41h28a8 8 0 0 1 0 16H36a8 8 0 0 1 0-16Z" fill="#1FD3EE"/>
+          <path d="M58 54a8 8 0 0 1 16 0v15a8 8 0 0 1-16 0Z" fill="#145CFF"/>
+        </g>
+      </g>
+      <text x="132" y="70" class="latin" font-size="58" font-weight="800" fill="#07111F">FlowTech</text>
+    </g>
+
+    <g transform="translate(76 282)">
+      <text x="0" y="0" class="jp" font-size="32" font-weight="700" fill="#2D465C">代表取締役</text>
+      <text x="0" y="88" class="jp" font-size="78" font-weight="800" fill="#07111F">古垣 博光</text>
+      <text x="4" y="132" class="latin" font-size="26" font-weight="600" fill="#547082">Hiromitsu Furugaki</text>
+      <text x="4" y="186" class="latin" font-size="24" font-weight="600" fill="#31546B">hiromitsu_furugaki@flowtech.co.jp</text>
+      <text x="4" y="224" class="latin" font-size="24" font-weight="600" fill="#31546B">080-1507-6715</text>
+    </g>
+
+    <g transform="translate(650 403)">
+      <rect x="-2" y="-80" width="350" height="2" fill="#D4E3EA"/>
+      <text x="0" y="0" class="jp small" font-weight="700" fill="#07111F">株式会社FlowTech</text>
+      <text x="0" y="44" class="latin small" font-weight="600" fill="#31546B">https://flowtech.co.jp</text>
+      <text x="0" y="88" class="jp micro" font-weight="500" fill="#547082">東京都渋谷区渋谷2-19-15</text>
+      <text x="0" y="120" class="jp micro" font-weight="500" fill="#547082">宮益坂ビルディング609</text>
+    </g>
+  </g>
+
+  <!-- Back side -->
+  <g transform="translate(1170 55)" filter="url(#softShadow)">
+    <rect width="1080" height="650" rx="28" fill="url(#deep)"/>
+    <path d="M-74 518C128 448 251 477 389 550c152 81 294 92 517-31 91-50 166-72 241-63v168c-110-11-216 23-333 89H-74Z" fill="url(#stream)" opacity="0.88"/>
+    <path d="M-44 470c205-64 343-22 480 49 156 80 271 80 457-22 102-56 191-84 269-74v64c-103-7-174 21-267 72-183 101-319 100-474 21-135-70-260-102-465-32Z" fill="#FFFFFF" opacity="0.22"/>
+    <path d="M736 -42C592 18 512 124 374 137c-122 12-207-42-321-74V-42Z" fill="#FFFFFF" opacity="0.06"/>
+    <path d="M821 75C685 142 598 237 445 242c-120 4-219-43-331-82" fill="none" stroke="#1FD3EE" stroke-width="9" stroke-linecap="round" opacity="0.42"/>
+
+    <g transform="translate(72 70)">
+      <g transform="scale(1.42)">
+        <rect x="0" y="0" width="72" height="72" rx="18" fill="#FFFFFF"/>
+        <clipPath id="backClip"><rect x="0" y="0" width="72" height="72" rx="18"/></clipPath>
+        <g clip-path="url(#backClip)">
+          <path d="M20 18h36a8 8 0 0 1 0 16H36v37H20Z" fill="#07111F"/>
+          <path d="M36 41h28a8 8 0 0 1 0 16H36a8 8 0 0 1 0-16Z" fill="#1FD3EE"/>
+          <path d="M58 54a8 8 0 0 1 16 0v15a8 8 0 0 1-16 0Z" fill="#145CFF"/>
+        </g>
+      </g>
+      <text x="126" y="66" class="latin" font-size="58" font-weight="800" fill="#FFFFFF">FlowTech</text>
+    </g>
+
+    <g transform="translate(76 268)">
+      <text x="0" y="0" class="jp" font-size="32" font-weight="700" fill="#9FE7F5">事業領域</text>
+      <text x="0" y="68" class="jp" font-size="31" font-weight="700" fill="#FFFFFF">フリーランスエンジニアマッチングプラットフォーム</text>
+      <text x="0" y="112" class="latin" font-size="35" font-weight="800" fill="#1FD3EE">Flow Link</text>
+      <text x="0" y="178" class="jp" font-size="31" font-weight="700" fill="#FFFFFF">作業報告書作成Webアプリ</text>
+      <text x="0" y="222" class="latin" font-size="35" font-weight="800" fill="#25D6A2">Flow Report</text>
+      <text x="0" y="288" class="jp" font-size="31" font-weight="700" fill="#FFFFFF">システムエンジニアリングサービス</text>
+    </g>
+
+  </g>
+</svg>
