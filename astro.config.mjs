@@ -4,7 +4,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://flowtech.co.jp',
+  site: 'https://www.flowtech.co.jp',
   adapter: vercel({
     webAnalytics: {
       enabled: true,

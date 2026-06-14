@@ -39,6 +39,43 @@ const businesses = [
   'フリーランスエンジニア向け作業報告書作成 Web アプリ「Flow Report」の運営',
   'システムエンジニアリングサービス事業の運営',
 ];
+
+const siteUrl = 'https://www.flowtech.co.jp';
+const siteDescription =
+  '株式会社FlowTechは、Flow Link、Flow Report、システムエンジニアリングサービス事業を通じて、フリーランスエンジニアと企業の仕事の流れを支える会社です。';
+const ogDescription = 'フリーランスエンジニアと企業の仕事の流れを支える、株式会社FlowTechの公式ホームページです。';
+const ogImageUrl = `${siteUrl}/assets/flowtech-og-image.png`;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: '株式会社FlowTech',
+      url: siteUrl,
+      logo: `${siteUrl}/assets/flowtech-mark.svg`,
+      image: ogImageUrl,
+      email: 'hiromitsu_furugaki@flowtech.co.jp',
+      address: {
+        '@type': 'PostalAddress',
+        addressCountry: 'JP',
+        addressRegion: '東京都',
+        addressLocality: '渋谷区',
+        streetAddress: '渋谷2-19-15 宮益坂ビルディング609',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: '株式会社FlowTech',
+      url: siteUrl,
+      image: ogImageUrl,
+      publisher: {
+        '@id': `${siteUrl}/#organization`,
+      },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -49,20 +86,26 @@ const businesses = [
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="株式会社FlowTechは、Flow Link、Flow Report、システムエンジニアリングサービス事業を通じて、フリーランスエンジニアと企業の仕事の流れを支える会社です。"
-    />
+    <meta name="description" content={siteDescription} />
+    <meta name="robots" content="max-image-preview:large" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="株式会社FlowTech" />
     <meta property="og:title" content="株式会社FlowTech" />
-    <meta
-      property="og:description"
-      content="フリーランスエンジニアと企業の仕事の流れを支える、株式会社FlowTechの公式ホームページです。"
-    />
-    <meta property="og:url" content="https://flowtech.co.jp" />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:secure_url" content={ogImageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="株式会社FlowTechのロゴ" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://flowtech.co.jp" />
+    <meta name="twitter:title" content="株式会社FlowTech" />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content="株式会社FlowTechのロゴ" />
+    <link rel="canonical" href={siteUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <title>株式会社FlowTech | フリーランスエンジニアと企業をつなぐ</title>
   </head>
   <body>
