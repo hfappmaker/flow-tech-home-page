@@ -210,8 +210,7 @@ h1 {
   line-height: 2;
 }
 
-.hero-actions,
-.contact-actions {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -273,8 +272,7 @@ h1 {
   margin-bottom: 34px;
 }
 
-.section-heading h2,
-.contact-section h2 {
+.section-heading h2 {
   margin-bottom: 0;
   font-size: 4.8rem;
   font-weight: 900;
@@ -470,96 +468,17 @@ h1 {
   padding-left: 1.2em;
 }
 
-.contact-section {
-  margin: 0 clamp(20px, 7vw, 96px) clamp(48px, 8vw, 92px);
-  padding: clamp(42px, 7vw, 72px);
-  color: var(--white);
-  background:
-    linear-gradient(135deg, rgba(18, 24, 38, 0.94), rgba(18, 24, 38, 0.82)),
-    linear-gradient(90deg, var(--blue), var(--teal));
-  border-radius: 8px;
-}
-
-.contact-section .section-kicker {
-  color: var(--lime);
-}
-
-.contact-section p {
-  width: min(760px, 100%);
-  color: rgba(255, 255, 255, 0.78);
-  line-height: 1.9;
-}
-
-.contact-section .button.secondary {
-  color: var(--white);
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.46);
-}
-
-.contact-page {
-  min-height: 100vh;
-  padding: clamp(120px, 14vw, 172px) clamp(20px, 7vw, 96px) clamp(64px, 9vw, 112px);
-  background:
-    linear-gradient(115deg, rgba(251, 251, 247, 0.98), rgba(230, 248, 242, 0.72)),
-    var(--paper);
-}
-
-.contact-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
-  gap: clamp(28px, 6vw, 80px);
-  align-items: end;
-  margin-bottom: clamp(36px, 7vw, 72px);
-}
-
-.contact-hero h1 {
-  margin-bottom: 0;
-  font-size: clamp(3.2rem, 7vw, 5.2rem);
-}
-
-.contact-hero p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 1.06rem;
-  font-weight: 700;
-  line-height: 1.9;
-}
-
-.contact-email-section {
-  padding-block: clamp(32px, 5vw, 56px);
-  border-block: 1px solid var(--line);
-}
-
-.contact-email-section h2 {
-  margin-bottom: 18px;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  font-weight: 900;
-}
-
-.contact-email-link {
-  display: inline-flex;
-  max-width: 100%;
-  align-items: center;
-  padding-block: 8px;
-  color: var(--ink);
-  border-bottom: 3px solid var(--blue);
-  font-family: 'Bricolage Grotesque', 'Zen Kaku Gothic New', sans-serif;
-  font-size: clamp(1.45rem, 4vw, 3rem);
-  font-weight: 800;
-  overflow-wrap: anywhere;
-}
-
-.contact-email-link:hover,
-.contact-email-link:focus-visible {
+.company-contact-link {
   color: var(--blue);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
-.contact-email-section p {
-  width: min(760px, 100%);
-  margin: 24px 0 0;
-  color: var(--ink-soft);
-  font-weight: 700;
-  line-height: 1.9;
+.company-contact-link:hover,
+.company-contact-link:focus-visible {
+  color: var(--teal);
 }
 
 .site-footer {
@@ -582,8 +501,7 @@ h1 {
     font-size: 5.2rem;
   }
 
-  .section-heading h2,
-  .contact-section h2 {
+  .section-heading h2 {
     font-size: 4rem;
   }
 
@@ -616,8 +534,7 @@ h1 {
     font-size: 4.2rem;
   }
 
-  .section-heading h2,
-  .contact-section h2 {
+  .section-heading h2 {
     font-size: 3.4rem;
   }
 
@@ -641,14 +558,12 @@ h1 {
   }
 
   .section-heading,
-  .contact-hero,
   .site-footer {
     align-items: start;
   }
 
   .service-card,
   .service-card--plain,
-  .contact-hero,
   .company-table div {
     grid-template-columns: 1fr;
   }
@@ -689,8 +604,7 @@ h1 {
     font-size: 1rem;
   }
 
-  .section-heading h2,
-  .contact-section h2 {
+  .section-heading h2 {
     font-size: 2.55rem;
   }
 
@@ -698,8 +612,7 @@ h1 {
     font-size: 2.45rem;
   }
 
-  .hero-actions,
-  .contact-actions {
+  .hero-actions {
     display: grid;
   }
 
@@ -710,10 +623,5 @@ h1 {
   .section-heading,
   .site-footer {
     display: grid;
-  }
-
-  .contact-section {
-    margin-inline: 20px;
-    padding: 32px 22px;
   }
 }
